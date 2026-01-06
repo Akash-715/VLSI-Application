@@ -360,41 +360,48 @@ body{
 }
 
 
+/* ============================= */
+/* ===== MOBILE RESPONSIVE ===== */
+/* ============================= */
+
 @media (max-width: 768px) {
 
+  /* ---------- NAVBAR ---------- */
+
   .mainNav{
-      padding: 0 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 60px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 15px;
       background-color: #073738;
+      z-index: 1000;
   }
 
   .brand{
       font-size: 14px;
+      font-weight: 600;
       white-space: nowrap;
-  }
-
-  .navLinks{
-      gap: 14px;
-  }
-
-  .navLinks li{
-      font-size: 14px;
       color: white;
   }
 
-.mainNav ul{
-      margin: 0;
-      padding: 0;
+  .navLinks{
       display: flex;
-      align-items: center;
-      gap: 14px;
+      gap: 12px;
   }
 
-  .mainNav li{
+  .navLinks li{
+      font-size: 13px;
       padding: 0;
-      font-size: 14px;
   }
 
+  /* prevent mobile auto-scroll bug */
   .mainNav.scrolled{
       background-color: #073738 !important;
       box-shadow: none;
@@ -408,14 +415,22 @@ body{
   .mainNav.scrolled a::after{
       background-color: #6fd1a5;
   }
-  /* HERO / SLOGAN */
+
+  /* ---------- PAGE OFFSET ---------- */
+
+  .homeDiv{
+      padding-top: 60px; /* SAME AS NAV HEIGHT */
+  }
+
+  /* ---------- HERO ---------- */
+
   .sloganDiv{
       height: 420px;
       clip-path: none;
   }
 
   #head{
-      padding: 100px 20px 0 20px;
+      padding: 90px 20px 0 20px;
       font-size: 28px;
       text-align: center;
   }
@@ -425,11 +440,12 @@ body{
       text-align: center;
   }
 
-  /* DESC SECTION */
+  /* ---------- DESCRIPTION ---------- */
 
   .descDiv{
       grid-template-columns: 1fr;
       height: auto;
+      padding: 20px;
   }
 
   .descContent p{
@@ -443,20 +459,16 @@ body{
   .descImage img{
       width: 100%;
       height: auto;
-      margin: 20px 0;
+      margin: 20px 0 0 0;
       border-radius: 12px;
   }
 
-  /* DISCOUNT SECTION */
+  /* ---------- DISCOUNT SECTION ---------- */
 
   .discountDiv{
       grid-template-columns: 1fr;
+      height: auto !important;
       padding: 20px;
-  }
-
-  .discountPercentage{
-      margin: 20px auto;
-      max-width: 280px;
   }
 
   .discountWords{
@@ -465,9 +477,11 @@ body{
   }
 
   .discountPercentage{
-      margin: 20px;
-      padding: 20px;
-      width: auto;
+      margin: 20px auto;
+      padding: 16px;
+      max-width: 260px;
+      width: 100%;
+      border-radius: 14px;
   }
 
   .discountPercentage h2{
@@ -484,14 +498,15 @@ body{
       letter-spacing: 2px;
   }
 
-  /* FAQ */
+  /* ---------- FAQ ---------- */
+
   .faqDiv{
       height: auto;
       padding-bottom: 40px;
   }
 
   .faqContent{
-      margin-left: 0;
+      margin-left: 0 !important;
       padding: 0 20px;
   }
 
@@ -499,7 +514,8 @@ body{
       width: 100%;
   }
 
-  /* FOOTER */
+  /* ---------- FOOTER ---------- */
+
   .footerDiv{
       height: auto;
       clip-path: none;
