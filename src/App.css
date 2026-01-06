@@ -355,26 +355,32 @@ body{
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .mainNav{
-      height: auto;
-      flex-direction: column;
-      padding: 10px 0;
+      flex-direction: row;     /* KEEP ROW */
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      height: 60px;
   }
 
   .mainNav ul{
-      margin-right: 0;
-      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
   }
 
   .mainNav li{
-      display: block;
-      padding: 10px 0;
+      padding: 0;
+      font-size: 14px;
   }
 
   #NavCompanyTag{
-      margin-right: 0;
+      margin: 0;
+      font-size: 14px;
       font-weight: 600;
+      white-space: nowrap;
   }
 
   /* HERO / SLOGAN */
@@ -395,10 +401,10 @@ body{
   }
 
   /* DESC SECTION */
+
   .descDiv{
       grid-template-columns: 1fr;
       height: auto;
-      padding: 20px;
   }
 
   .descContent p{
@@ -412,7 +418,8 @@ body{
   .descImage img{
       width: 100%;
       height: auto;
-      margin: 20px 0 0 0;
+      margin: 20px 0;
+      border-radius: 12px;
   }
 
   /* DISCOUNT SECTION */
@@ -424,11 +431,27 @@ body{
 
   .discountWords{
       padding: 20px;
-      text-align: center;
+      text-align: left;
   }
 
   .discountPercentage{
       margin: 20px;
+      padding: 20px;
+      width: auto;
+  }
+
+  .discountPercentage h2{
+      font-size: 56px;
+  }
+
+  .discountPercentage h1{
+      font-size: 32px;
+      letter-spacing: 4px;
+  }
+
+  .discountPercentage p{
+      font-size: 18px;
+      letter-spacing: 2px;
   }
 
   /* FAQ */
