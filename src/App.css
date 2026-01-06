@@ -8,14 +8,21 @@ body{
 /* Navbar CSS */
 
 .mainNav{
-    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    border: none;
-    background-color: #073738;
-    position: fixed;
-    height: 70px;
-    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.brand{
+    font-family: "poppins";
+    color: white;
+    font-weight: 600;
+}
+
+.navLinks{
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -355,15 +362,38 @@ body{
 
 @media (max-width: 768px) {
 
+body::before{
+    content: "MOBILE MODE";
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    z-index: 9999;
+    background: red;
+    color: white;
+    padding: 5px;
+  }
+
+
+
   .mainNav{
-      flex-direction: row;     /* KEEP ROW */
-      align-items: center;
-      justify-content: space-between;
       padding: 0 15px;
       height: 60px;
   }
 
-  .mainNav ul{
+  .brand{
+      font-size: 14px;
+      white-space: nowrap;
+  }
+
+  .navLinks{
+      gap: 14px;
+  }
+
+  .navLinks li{
+      font-size: 14px;
+  }
+
+.mainNav ul{
       margin: 0;
       padding: 0;
       display: flex;
@@ -376,12 +406,6 @@ body{
       font-size: 14px;
   }
 
-  #NavCompanyTag{
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      white-space: nowrap;
-  }
 
   /* HERO / SLOGAN */
   .sloganDiv{
@@ -423,10 +447,15 @@ body{
   }
 
   /* DISCOUNT SECTION */
+
   .discountDiv{
       grid-template-columns: 1fr;
-      height: auto;
-      padding: 20px 0;
+      padding: 20px;
+  }
+
+  .discountPercentage{
+      margin: 20px auto;
+      max-width: 280px;
   }
 
   .discountWords{
