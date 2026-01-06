@@ -351,3 +351,110 @@ body{
     font-family: 'poppins';
     color: #6fd1a5;
 }
+
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .mainNav{
+      height: auto;
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  .mainNav ul{
+      margin-right: 0;
+      text-align: center;
+  }
+
+  .mainNav li{
+      display: block;
+      padding: 10px 0;
+  }
+
+  #NavCompanyTag{
+      margin-right: 0;
+      font-weight: 600;
+  }
+
+  /* HERO / SLOGAN */
+  .sloganDiv{
+      height: 420px;
+      clip-path: none;
+  }
+
+  #head{
+      padding: 100px 20px 0 20px;
+      font-size: 28px;
+      text-align: center;
+  }
+
+  #slogan{
+      padding: 0 20px;
+      text-align: center;
+  }
+
+  /* DESC SECTION */
+  .descDiv{
+      grid-template-columns: 1fr;
+      height: auto;
+      padding: 20px;
+  }
+
+  .descContent p{
+      padding-left: 0;
+  }
+
+  .descContent ul{
+      padding-left: 20px;
+  }
+
+  .descImage img{
+      width: 100%;
+      height: auto;
+      margin: 20px 0 0 0;
+  }
+
+  /* DISCOUNT SECTION */
+  .discountDiv{
+      grid-template-columns: 1fr;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  .discountWords{
+      padding: 20px;
+      text-align: center;
+  }
+
+  .discountPercentage{
+      margin: 20px;
+  }
+
+  /* FAQ */
+  .faqDiv{
+      height: auto;
+      padding-bottom: 40px;
+  }
+
+  .faqContent{
+      margin-left: 0;
+      padding: 0 20px;
+  }
+
+  .answer{
+      width: 100%;
+  }
+
+  /* FOOTER */
+  .footerDiv{
+      height: auto;
+      clip-path: none;
+      padding-bottom: 50px;
+  }
+
+  .footerDiv h1{
+      padding: 100px 20px 0 20px;
+      text-align: center;
+  }
+}
