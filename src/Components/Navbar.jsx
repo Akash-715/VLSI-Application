@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className = {`mainNav ${scrolled ? "scrolled" : ""}`} >
 
         <div className= "brand">Company Name & Logo</div>
-        <ul>
+        <ul className='navLinks'>
             <li><NavLink to = "/">Home</NavLink></li>
             <li><NavLink to = "/about">About</NavLink></li>
             <li><NavLink to = "/courses">Courses</NavLink></li>
