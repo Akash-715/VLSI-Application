@@ -396,21 +396,18 @@ body{
   }
 
   .mainNav.scrolled{
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
+      background-color: #073738 !important;
+      box-shadow: none;
+  }
 
-.mainNav.scrolled a,
-.mainNav.scrolled li{
-    color: black;
-}
+  .mainNav.scrolled a,
+  .mainNav.scrolled li{
+      color: white !important;
+  }
 
-.mainNav.scrolled a::after{
-    background-color: black;
-}
-
-
-
+  .mainNav.scrolled a::after{
+      background-color: #6fd1a5;
+  }
   /* HERO / SLOGAN */
   .sloganDiv{
       height: 420px;
