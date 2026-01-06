@@ -20,15 +20,15 @@ const Navbar = () => {
   return (
     <div>
       <div className = {`mainNav ${scrolled ? "scrolled" : ""}`} >
-            <div className="brand">Company Name & Logo</div>
 
-            <ul className="navLinks">
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/courses">Courses</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
-        </div>
+        <div className= "brand">Company Name & Logo</div>
+        <ul>
+            <li><NavLink to = "/">Home</NavLink></li>
+            <li><NavLink to = "/about">About</NavLink></li>
+            <li><NavLink to = "/courses">Courses</NavLink></li>
+            <li><NavLink to = "/contact">Contact us </NavLink></li>
+        </ul>
+      </div>
     </div>
   )
 }
