@@ -62,7 +62,7 @@ const Home = () => {
         </p>
 
         <ul>
-          <li><strong>Industry-oriented</strong>aligned with VLSI curriculum</li>
+          <li>Industry-oriented aligned with VLSI curriculum</li>
           <li>Hands-on projects with real tools</li>
           <li>Internship & real-time exposure</li>
           <li>Expert mentors from semiconductor industry</li>
