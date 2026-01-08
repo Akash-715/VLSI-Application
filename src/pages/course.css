@@ -182,6 +182,10 @@
 
 @media (max-width: 768px) {
 
+*{
+  box-sizing: border-box;
+}
+
   /* PAGE OFFSET */
   .course{
     padding-top: 56px; /* navbar height */
@@ -237,9 +241,14 @@
     padding-left: 0;
   }
 
+.courseDetails ul{
+  padding-left: 6px;   /* 🔽 reduce from default ~40px */
+  margin-left: 0;
+}
+
   .courseDetails li{
     font-size: 14px;
-    padding: 6px 0;
+    padding: 6px 0px;
   }
 
 
