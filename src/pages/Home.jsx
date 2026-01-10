@@ -79,7 +79,7 @@ const Home = () => {
 
       <div className='discountDiv'>
         <div className='discountWords'>
-          <h1>Free Internship Program</h1>
+          <h1>Internship Program</h1>
 
           <p>
             We don’t just train — we provide real industry exposure.
