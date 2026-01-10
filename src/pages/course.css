@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
-    height: 1000px;
+    height: 820px;
     padding-top: 10px;
 }
 
@@ -176,9 +176,110 @@
     flex-shrink: 0;
 }
 
-/* =============================== */
-/* ===== COURSES MOBILE VIEW ===== */
-/* =============================== */
+.courseContent{
+  height: 100%;
+  margin: 20px;
+  box-shadow: 0px 0px 5px 5px #beb8b8;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppins";
+  gap: 40px;
+  padding-bottom: 100px;
+}
+
+.courseContent h1{
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color:#3FA34D;
+}
+
+.courseBlock{
+  position: relative;
+  padding: 16px 40px;
+}
+
+
+.courseHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.courseBlock::after{
+  content: "";
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 0;
+  height: 1px;
+  background: rgba(63,163,77,0.4);
+}
+
+
+.modules{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+
+.modules.active{
+  max-height: 500px; 
+  margin-top: 16px;
+}
+
+/* module list */
+.modules ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* evenly spread columns */
+  gap: 12px 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.modules li{
+  display: flex;
+  gap: 10px;
+  font-family: "poppins";
+  font-size: 15px;
+  color: #073738;
+}
+
+
+.modules li::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #3FA34D;
+  transform: rotate(45deg);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.more{
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #3FA34D;
+}
+
+.courseBlock .more{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+
+.courseBlock:hover .more{
+  opacity: 1;
+  visibility: visible;
+}
+
 
 @media (max-width: 768px) {
 
@@ -312,6 +413,69 @@
 
   .innerList{
     padding-left: 20px;
+  }
+
+    /* ---------- COURSE CONTENT CONTAINER ---------- */
+
+  .courseContent{
+    margin: 12px;
+    padding-bottom: 60px;
+    gap: 24px;
+  }
+
+  .courseContent h1{
+    font-size: 26px;
+  }
+
+  /* ---------- COURSE BLOCK ---------- */
+
+  .courseBlock{
+    padding: 14px 16px;   /* reduce side padding */
+  }
+
+  .courseBlock::after{
+    left: 16px;
+    right: 16px;
+  }
+
+  /* ---------- HEADER ROW ---------- */
+
+  .courseHeader{
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .courseTitle{
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* hide hover-based "more" on touch devices */
+  .courseBlock .more{
+    opacity: 1;
+    visibility: visible;
+    font-size: 10px;
+  }
+
+  /* ---------- MODULES (ACCORDION) ---------- */
+
+  .modules.active{
+    margin-top: 12px;
+  }
+
+  .modules ul{
+    grid-template-columns: 1fr;   /* single column */
+    gap: 10px;
+  }
+
+  .modules li{
+    font-size: 14px;
+  }
+
+  .modules li::before{
+    width: 7px;
+    height: 7px;
+    margin-top: 6px;
   }
 
 }
