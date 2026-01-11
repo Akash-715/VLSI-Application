@@ -64,7 +64,7 @@
 }
 
 #slogan{
-    padding: 0px 10px 0px 150px; 
+    padding: 20px 10px 0px 150px; 
     color: #7CFF7A;
     font-family: "poppins";
     font-size: 18px;
@@ -343,7 +343,7 @@
   }
 
   #slogan{
-      padding: 0 16px;
+      padding:16px;
       text-align: center;
       font-size: 15px;
   }
