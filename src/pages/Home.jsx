@@ -47,8 +47,14 @@ const Home = () => {
   return (
     <div className='homeDiv'>
       <div className='sloganDiv'>
+          <div className='sloganGreen'>
             <h1 id='head'>Company Name</h1>
             <p id='slogan'>Slogan takes place here</p>
+          </div>
+
+          <div className='sloganImage'>
+            
+          </div>
       </div>
 
       <div className='descDiv'>

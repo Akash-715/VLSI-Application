@@ -144,7 +144,7 @@ const Courses = () => {
                   >
                     <span className="courseTitle">{course.Title}</span>
                     <span className="more">
-                      {activeIndex === index ? "Hide Details ↗" : "More Details ↘"}
+                      {activeIndex === index ? "Hide Modules ↗" : "See Modules ↘"}
                     </span>
                   </div>
 
