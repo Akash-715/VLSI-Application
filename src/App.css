@@ -151,7 +151,7 @@
 
 .discountWords{
     color: white;
-    padding: 0px 80px;
+    padding: 30px 80px;
     font-family: "poppins";
 
 }
@@ -206,7 +206,7 @@
 
 /* 100% */
 .discountPercentage h2{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     color: #073738;
     line-height: 0.9;   
@@ -215,16 +215,16 @@
 
 /* FREE */
 .discountPercentage h1{
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: 6px;
-    color: #6fd1a5;
-    margin: 4px 0;
+    color:#3FA34D;
+    margin: 20px 0;
     line-height: 1;    
 }
 
 /* Internship */
 .discountPercentage p{
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 3px;
     color: #073738;
     margin: 0;          
@@ -246,8 +246,8 @@
 
 .faqDiv h2{
     font-family: "poppins";
-    margin-top:-20px;
-    margin-left: 50px;
+    margin-top:-5px;
+    margin-left: 70px;
     font-size: 36px;
     font-weight: 600;
 }
@@ -400,23 +400,23 @@
 
   .discountPercentage{
       margin: 24px auto 0;
-      padding: 16px;
+      padding: 20px;
       width: 100%;
-      max-width: 260px;
+      max-width: 320px;
       border-radius: 14px;
   }
 
   .discountPercentage h2{
-      font-size: 52px;
+      font-size: 26px;
   }
 
   .discountPercentage h1{
-      font-size: 30px;
+      font-size: 22px;
       letter-spacing: 3px;
   }
 
   .discountPercentage p{
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: 2px;
   }
 
@@ -427,9 +427,13 @@
       padding-bottom: 40px;
   }
 
-  .faqDiv h1,
+  .faqDiv h1{
+      padding-left: 12px;
+  }
+
   .faqDiv h2{
-      padding-left: 16px;
+    padding-bottom: 30px;
+    padding-right: 20px;
   }
 
   .faqContent{
@@ -437,10 +441,15 @@
       padding: 0 16px;
   }
 
+  .question{
+    font-size: 18px;
+  }
+
   .answer{
       width: 100%;
       font-size: 14px;
   }
+
 
   /* ---------- FOOTER ---------- */
 

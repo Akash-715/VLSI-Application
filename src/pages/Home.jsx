@@ -103,9 +103,9 @@ const Home = () => {
         </div>
 
         <div className='discountPercentage'>
-            <h2>100%</h2>
-            <h1>FREE</h1>
-            <p>Internship</p>
+            <h2>Industry-Backed</h2>
+            <h1>VLSI Internship</h1>
+            <p>Hands-on | Mentor-Led | Real Projects</p>
         </div>
       </div>
 
