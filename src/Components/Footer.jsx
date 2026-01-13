@@ -1,9 +1,10 @@
 import React from 'react'
 import './footer.css'
 
+import { NavLink } from 'react-router-dom'
+
 const Footer = () => {
-  // test contribution
-console.log("GitHub contribution test");
+
 
   return (
     <footer className="footerDiv">
@@ -14,10 +15,10 @@ console.log("GitHub contribution test");
         <div className="footerCol">
           <h3>Quick Links</h3>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Courses</li>
-            <li>Contact Us</li>
+            <li><NavLink to = "/">Home</NavLink></li>
+            <li><NavLink to = "/about">About us</NavLink></li>
+            <li><NavLink to = "/courses">Courses</NavLink></li>
+            <li><NavLink to = "/contact">Contact us </NavLink></li>
           </ul>
         </div>
 
