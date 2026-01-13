@@ -2,6 +2,9 @@ import React from 'react'
 import './footer.css'
 
 const Footer = () => {
+  // test contribution
+console.log("GitHub contribution test");
+
   return (
     <footer className="footerDiv">
 
