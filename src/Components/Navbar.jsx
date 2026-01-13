@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaBars } from "react-icons/fa";
+
 
 import './navbar.css';
 
@@ -18,7 +20,7 @@ const Navbar = () => {
 
   } , []);
 
-  // const [openMenu , setOpenMenu] = useState(false);
+const [openMenu , setOpenMenu] = useState(false);
 
   return (
     <div>
@@ -32,7 +34,21 @@ const Navbar = () => {
             <li><NavLink to = "/contact">Contact us </NavLink></li>
         </ul>
 
+      <div className='hamburger'>
+        <FaBars size={28} onClick={() => setOpenMenu(prev => !prev)} />
       </div>
+      </div>
+
+      <div className= {`menu ${openMenu ? "active" : ""}`}>
+
+            <NavLink to="/" onClick={() => setOpenMenu(false)}>Home</NavLink>
+            <NavLink to = "/about">About</NavLink>
+            <NavLink to = "/courses">Courses</NavLink>
+            <NavLink to = "/contact">Contact us </NavLink>
+
+      </div>
+
+
     </div>
   )
 }

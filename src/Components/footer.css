@@ -46,6 +46,11 @@
   padding: 0;
 }
 
+.footerCol a{
+    text-decoration: none;
+    color: white;
+}
+
 .footerCol li{
   margin-bottom: 10px;
   font-family: "poppins";
@@ -53,7 +58,7 @@
   cursor: pointer;
 }
 
-.footerCol li:hover{
+.footerCol a:hover{
   color: #7CFF7A;
 }
 
