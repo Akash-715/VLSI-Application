@@ -27,7 +27,7 @@
 .footerContent{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;                 /* ⬅ reduced gap */
+  gap: 18px;                 /* ⬅ reduced gap */
   padding: 200px 40px 40px; /* ⬅ reduced side padding */
   max-width: 990px;        /* ⬅ keeps content inside green area */
 }

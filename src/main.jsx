@@ -5,12 +5,15 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { ContactProvider } from './context/ContactContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <StrictMode>
-    <App />
-  </StrictMode>
+  <ContactProvider>
+        <App />
+  </ContactProvider>
+
+
   </BrowserRouter>
 
 )
