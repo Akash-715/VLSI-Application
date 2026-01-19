@@ -48,7 +48,7 @@ const Home = () => {
     <div className='homeDiv'>
       <div className='sloganDiv'>
           <div className='sloganGreen'>
-            <h1 id='head'>Company Name</h1>
+            <h1 id='head'>Silicon Vista</h1>
             <p id='slogan'>Slogan takes place here</p>
           </div>
 

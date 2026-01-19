@@ -48,7 +48,7 @@ const Footer = () => {
 
       {/* COPYRIGHT */}
       <div className="footerBottom">
-        © 2026 Company Name. All Rights Reserved.
+        © 2026 SiliconVista. All Rights Reserved.
       </div>
 
     </footer>
