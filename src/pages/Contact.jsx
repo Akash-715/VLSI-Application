@@ -4,8 +4,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 import Footer from '../Components/Footer.jsx';
+import { useContact } from '../context/ContactContext.jsx';
 
 const Contact = () => {
+
+   const { sendEnquiry, loading, successMsg, errorMsg } = useContact();
 
 
   const [formFields , setFormfields] = useState({
@@ -16,11 +19,24 @@ const Contact = () => {
   });
 
   const handleFields = (event) => {
-    const [name , value] = event.target;
+    const {name , value} = event.target;
 
     setFormfields(prev => ({...prev , [name] : value}))
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const result = await sendEnquiry(formFields);
+
+    if(result.ok){
+      setFormfields({
+            userName: "",
+            email: "",
+            phone: "",
+            message: ""
+      })
+    }
+  }
 
   return (
     <div className='contactDiv'>
@@ -30,7 +46,7 @@ const Contact = () => {
               <span id='ques'>Any Enquiry ?</span> <br />
               <span id='msg'>Message Us</span>
 
-              <Form className='Form'>
+              <Form className='Form' onSubmit={handleSubmit}>
 
                 <Form.Group className='mb-3'>
                   <Form.Control type = "text" name='userName' onChange={handleFields} value={formFields.userName} placeholder='Enter Name' />
@@ -48,10 +64,13 @@ const Contact = () => {
                   <Form.Control as={'textarea'} rows={3} name='message' onChange={handleFields} value={formFields.message} placeholder='Enter Message' />
                 </Form.Group>
 
-                <Button  type='submit'>
-                  submit
+                <Button  type='submit' disabled={loading}>
+                  {loading ? "Sending..." : "Submit"}
                 </Button>
               </Form>
+
+                  {successMsg && <p style={{ color: "green" }}>{successMsg}</p>}
+                  {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
             </div>
 
 
