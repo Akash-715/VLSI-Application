@@ -3,12 +3,14 @@ import {Routes , Route} from 'react-router-dom';
 
 import Navbar from './Components/Navbar.jsx';
 import WhatsappIcon from './Components/WhatsappIcon.jsx';
+import CallButton from './Components/CallButton.jsx';
+import ScrollToTop from './Components/ScrollToTop.jsx';
 
 import Home from './pages/Home.jsx';
 import About from  './pages/About.jsx';
 import Courses from './pages/Courses.jsx';
 import Contact from './pages/Contact.jsx';
-import CallButton from './Components/CallButton.jsx';
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
     <div>
       <Navbar />
 
+      <ScrollToTop />
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/about" element = {<About />} />

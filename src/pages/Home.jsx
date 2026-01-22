@@ -16,7 +16,7 @@ const Home = () => {
   {
     question: "Who can study VLSI ?",
     answer:
-      "ECE, EEE students, freshers, and working professionals can study VLSI."
+      "ECE, EEE, CSE students, freshers, and working professionals can study VLSI."
   },
   {
     question: "What is the role of a VLSI Design Engineer ?",
@@ -36,8 +36,8 @@ const Home = () => {
     answer: "Basic programming knowledge is helpful, but not mandatory; required coding concepts are covered during the course."
   },
   {
-    question: "What tools are used in VLSI training ?",
-    answer: "Industry-standard EDA tools are used for design, simulation, verification, and physical design during training."
+    question: "What is verification VLSI design ?",
+    answer: "Verification in VLSI is the process of validating the functionality of a chip design to ensure it performs correctly according to specifications, using simulation, testbenches, and verification methodologies like UVM before fabrication."
   }
 
   ];
@@ -62,7 +62,7 @@ const Home = () => {
         <h1>Why You Need to Choose Us?</h1>
 
         <p>
-          We bridge the gap between academic knowledge and real-world semiconductor
+          <b>SiliconVista offers Design Verification Courses </b> and bridge the gap between academic knowledge and real-world semiconductor
           industry requirements. Our VLSI programs are designed by industry experts
           to make you job-ready, not just certificate-ready.
         </p>
@@ -95,7 +95,6 @@ const Home = () => {
 
           <ul>
             <li>Internship on live VLSI projects</li>
-            <li>Exposure to industry-standard tools</li>
             <li>Mentorship from working VLSI engineers</li>
             <li>Internship certificate upon completion</li>
             <li>Internship aligned with placement preparation</li>

@@ -48,7 +48,7 @@ const Footer = () => {
 
       {/* COPYRIGHT */}
       <div className="footerBottom">
-        © 2026 SiliconVista. All Rights Reserved.
+        © 2026 <a href='https://www.devspectra.in/' target='_blank' rel="noopener noreferrer">DevSpectra</a> All Rights Reserved.
       </div>
 
     </footer>
