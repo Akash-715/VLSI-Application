@@ -74,6 +74,7 @@ const Home = () => {
           <li>Expert mentors from semiconductor industry</li>
           <li>Placement assistance & career guidance</li>
           <li>Courses for freshers & professionals</li>
+          <li>Our real-time, hands-on training combined with individual one-on-one mentoring ensures you understand every concept deeply and progress with confidence.</li>
         </ul>
       </div>
 
