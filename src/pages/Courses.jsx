@@ -13,22 +13,35 @@ const Courses = () => {
         Modules : ["ASIC/FPGA Technologies & Flow" , "EDA Tools"]
       } , 
       {
-        Title: "Digital Electronics",
+        Title: "Introduction to Digital Systems",
         Tags: {Duration: ""},
-        Modules: ["Introduction To Logic Gates" , "Combinational/Sequential Logic Circuits" ,
-                  "Frequency Division Using Counters" , "Finite State Machine" ,
-                  "Synchronous and Asynchronous Digital Circuits" , "Clock Domain Crossing, Low Power Design Techniques",
-                  "Setup And Hold Time"]
+        Modules:[
+                    "Introduction to Digital Systems",
+                    "Boolean Algebra & Logic Gates",
+                    "Logic Simplification",
+                    "Combinational Logic Circuits",
+                    "Sequential Logic – Basics",
+                    "Counters & Registers",
+                    "Finite State Machines (FSM)"
+                ]
+
       },
       {
-        Title: "Verilog HDL" ,
+        Title: "Verilog" ,
         Tags: {Duration: ""} ,
-        Modules: ["Introduction to Verilog, Data Types, Operators" , "Compiler Directives And System Tasks" , 
-                  "Task & Function, Data Flow Modeling" , "Behavioral Modeling, Verilog For Design",
-                  "Combinational/Sequential Logic Design" , "Synthesizable RTL For Design" ,
-                  "Verilog For Verification, Timing Controls" , "Conditional Statements, Loops",
-                  "Sequential And Parallel Blocks" , "Advanced Verilog For Verification, Timing Checks"
-        ]
+        Modules: [
+                    "Introduction to HDL & Verilog",
+                    "Verilog Basics",
+                    "Modeling Styles",
+                    "Procedural Statements",
+                    "Combinational Logic Design",
+                    "Sequential Logic Design",
+                    "Timing & Coding Guidelines",
+                    "Testbench Development",
+                    "Simulation & Debugging",
+                    "Synthesis Basics"
+                  ]
+
       },
       {
         Title: "Verification Concepts",
@@ -38,25 +51,32 @@ const Courses = () => {
       {
         Title: "System Verilog",
         Tags: {Duration: ""} ,
-        Modules: ["Data Types – Arrays, Queue" , "Array Manipulation Methods" ,
-                  "Structures, Unions, Task And Function" , "Task and Functions" ,
-                  "Interface, Virtual Interface, SV Classes" , "Mailbox, Packages, Compilation Unit, Processes",
-                  "Randomization And Constraints, SV Assertions"
-        ]
+        Modules: [
+                    "Introduction to SystemVerilog",
+                    "SystemVerilog Data Types",
+                    "SystemVerilog Operators & Control",
+                    "Interfaces & Modports",
+                    "Object-Oriented Programming (OOP)",
+                    "Randomization & Constraints",
+                    "Functional Coverage",
+                    "Assertions (SVA)",
+                    "Mailbox, Packages, Compilation Unit, Processes"
+                  ]
+
       },
       {
         Title: "Protocol Training" ,
         Tags: {Duration: ""} ,
-        Modules: ["PCIe or DDR or AXI"]
+        Modules: ["AMBA Overview" , "APB,AHB, AXI" , "I2C"]
       },
       {
         Title: "UVM" ,
         Tags: {Duration: ""} ,
-        Modules: ["UVM Introduction, Factory and Overrides" , "UVM Reporting, Transaction Level Modeling",
-                  "UVM Driver, Sequencer, Monitor, Agent" , "UVM Environment, Test, Phases, Sequence",
-                  "Virtual Sequence and Virtual Sequencer" , "UVM Scoreboard, Callbacks, Configuration Management",
-                  "Register Abstraction Layer(RAL)" , "Functional Coverage Model and Subscriber",
-                  "Reference Model"
+        Modules: ["UVM Basics" , "UVM Testbench Architecture",
+                  "UVM Phases" , "UVM Driver, Sequencer, Monitor, Agent",
+                  "Virtual Sequence and Virtual Sequencer" , "UVM Configuration Database",
+                  "Factory & Overrides" , "UVM Scoreboard",
+                  "Register Layer (UVM-RAL)"
         ]
       },
       {
@@ -99,7 +119,6 @@ const Courses = () => {
             <li>Strong foundation in Digital Design and Verilog</li>
             <li>Coverage of state-of-the-art VLSI verification concepts</li>
             <li>Extensive training in SystemVerilog and UVM</li>
-            <li>Access to industry-standard verification tools</li>
             <li>Training delivered by experienced industry professionals</li>
             <li>Hands-on project experience using advanced technologies</li>
 
@@ -112,20 +131,13 @@ const Courses = () => {
 
           <p>Course Duration</p>
           <ul className='durationli'>
-            <li>4 Months (Full-Time)</li>
+            <li>4 Months</li>
           </ul>
 
-          <h3>Eligibility & Intake Process</h3>
+          <h3>Eligibility</h3>
 
           <ul>
-            <li>Engineering Degree in ECE, EEE, CSE, E&I, or equivalent Master’s Engineering programs</li>
-            <li>Written Test covering:</li>
-            <ul className='innerList'>
-              <li>Digital & Analog Electronics</li>
-              <li>C, C++</li>
-              <li>Analytical skills</li>
-            </ul>
-            <li>Technical Interview</li>
+            <li>Engineering Degree in ECE, EEE, CSE, E&I, or equivalent Master’s <br /> Engineering programs</li>
           </ul>
 
         </div>

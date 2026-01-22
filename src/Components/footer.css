@@ -27,9 +27,10 @@
 .footerContent{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 18px;                 /* ⬅ reduced gap */
-  padding: 200px 40px 40px; /* ⬅ reduced side padding */
-  max-width: 990px;        /* ⬅ keeps content inside green area */
+  gap: 18px;
+  padding: 260px 300px 60px 0px;  /* increased top padding for alignment */
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 /* COLUMN */
@@ -83,6 +84,11 @@
   font-family: "poppins";
   font-size: 14px;
   color: #e0ffe3;
+}
+
+.footerBottom a{
+  text-decoration: none;
+  color: #7CFF7A;
 }
 
 /* ================= MOBILE ================= */
