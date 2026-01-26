@@ -1,95 +1,111 @@
-import React, { useState } from 'react';
-import './contact.css';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
+import "./contact.css";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
-import Footer from '../Components/Footer.jsx';
-import { useContact } from '../context/ContactContext.jsx';
+import Footer from "../Components/Footer.jsx";
+import { useContact } from "../context/ContactContext.jsx";
 
 const Contact = () => {
+    const { sendEnquiry, loading, successMsg, errorMsg } = useContact();
 
-   const { sendEnquiry, loading, successMsg, errorMsg } = useContact();
+    const [formFields, setFormfields] = useState({
+        userName: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
 
+    const handleFields = (e) => {
+        const { name, value } = e.target;
+        setFormfields((prev) => ({ ...prev, [name]: value }));
+    };
 
-  const [formFields , setFormfields] = useState({
-    userName: "",
-    email: "",
-    phone: "",
-    message: ""
-  });
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-  const handleFields = (event) => {
-    const {name , value} = event.target;
+        const result = await sendEnquiry(formFields);
 
-    setFormfields(prev => ({...prev , [name] : value}))
-  }
+        if (result.ok) {
+            setFormfields({
+                userName: "",
+                email: "",
+                phone: "",
+                message: "",
+            });
+        }
+    };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const result = await sendEnquiry(formFields);
+    return (
+        <div className="contactDiv">
+            <div className="contactWrapper">
+                <div className="contactForm">
+                    <span id="ques">Any Enquiry ?</span> <br />
+                    <span id="msg">Message Us</span>
 
-    if(result.ok){
-      setFormfields({
-            userName: "",
-            email: "",
-            phone: "",
-            message: ""
-      })
-    }
-  }
+                    <Form className="Form" onSubmit={handleSubmit}>
+                        <Form.Group className="mb-3">
+                            <Form.Control
+                                type="text"
+                                name="userName"
+                                onChange={handleFields}
+                                value={formFields.userName}
+                                placeholder="Enter Name"
+                            />
+                        </Form.Group>
 
-  return (
-    <div className='contactDiv'>
-      <div className='contactWrapper'>
+                        <Form.Group className="mb-3">
+                            <Form.Control
+                                type="email"
+                                name="email"
+                                onChange={handleFields}
+                                value={formFields.email}
+                                placeholder="Enter email"
+                            />
+                        </Form.Group>
 
-            <div className='contactForm'>
-              <span id='ques'>Any Enquiry ?</span> <br />
-              <span id='msg'>Message Us</span>
+                        <Form.Group className="mb-3">
+                            <Form.Control
+                                type="number"
+                                name="phone"
+                                onChange={handleFields}
+                                value={formFields.phone}
+                                placeholder="Enter Phone Number"
+                            />
+                        </Form.Group>
 
-              <Form className='Form' onSubmit={handleSubmit}>
+                        <Form.Group className="mb-3">
+                            <Form.Control
+                                as={"textarea"}
+                                rows={3}
+                                name="message"
+                                onChange={handleFields}
+                                value={formFields.message}
+                                placeholder="Enter Message"
+                            />
+                        </Form.Group>
 
-                <Form.Group className='mb-3'>
-                  <Form.Control type = "text" name='userName' onChange={handleFields} value={formFields.userName} placeholder='Enter Name' />
-                </Form.Group>
+                        <Button type="submit" disabled={loading}>
+                            {loading ? "Sending..." : "Submit"}
+                        </Button>
+                    </Form>
 
-                <Form.Group className='mb-3'>
-                  <Form.Control type='email' name='email' onChange={handleFields} value={formFields.email} placeholder='Enter email' />
-                </Form.Group>
+                    {successMsg && <p style={{ color: "green" }}>{successMsg}</p>}
+                    {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
+                </div>
 
-                <Form.Group className='mb-3'>
-                  <Form.Control type = 'number' name = 'phone' onChange={handleFields} value={formFields.phone} placeholder = 'Enter Phone Number' /> 
-                </Form.Group>
+                <div className="contactDetails">
+                    <h1>Contact Details</h1>
 
-                <Form.Group className='mb-3'>
-                  <Form.Control as={'textarea'} rows={3} name='message' onChange={handleFields} value={formFields.message} placeholder='Enter Message' />
-                </Form.Group>
-
-                <Button  type='submit' disabled={loading}>
-                  {loading ? "Sending..." : "Submit"}
-                </Button>
-              </Form>
-
-                  {successMsg && <p style={{ color: "green" }}>{successMsg}</p>}
-                  {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
+                    <p>Email: company@gmail.com</p>
+                    <p>Phone: 2346718901</p>
+                    <p>Location: Chennai</p>
+                </div>
             </div>
 
+            <Footer />
+        </div>
+    );
+};
 
-            <div className='contactDetails'>
-
-              <h1>Contact Details</h1>
-
-            <p>Email: company@gmail.com</p>
-            <p>Phone: 2346718901</p>
-            <p>Location: Chennai</p>
-
-            </div>
-
-      </div>
-
-      <Footer />
-
-    </div>
-  )
-}
-
-export default Contact
+export default Contact;
