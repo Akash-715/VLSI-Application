@@ -38,14 +38,14 @@ export const ContactProvider = ({ children }) => {
         try {
             // ----- PAYLOAD FOR WEB3FORMS -----
             const payload = {
-                access_key: "5dfa89cc-8194-4229-a58d-5fe9de59b11f",
+                access_key: "5c4e6d3d-23c4-4dd5-a637-5a671f4fd831",
                 subject: "New Enquiry from Website",
 
                 from_name: userName,
                 from_email: email,
 
                 // Admin email (YOUR inbox)
-                email: "siliconvista.org.enquiry@gmail.com",
+                email: "siliconvista.enquiry@gmail.com",
 
                 message: `
           Name: ${userName}
