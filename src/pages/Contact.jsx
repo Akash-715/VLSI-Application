@@ -27,12 +27,15 @@ const Contact = () => {
         const result = await sendEnquiry(formFields);
 
         if (result.ok) {
-            setFormfields({
-                userName: "",
-                email: "",
-                phone: "",
-                message: "",
-            });
+            setTimeout(() => {
+                setFormfields({
+                    userName: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                });
+            }, 250);
+
         }
     };
 
