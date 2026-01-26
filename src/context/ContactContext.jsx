@@ -55,17 +55,17 @@ export const ContactProvider = ({ children }) => {
         `,
 
                 reply_to: email,
+                auto_reply: "true",
+                auto_reply_subject: "Thanks for contacting SiliconVista!",
+                auto_reply_message: `
+                        Hi ${userName},
 
-                // Auto-response email to user
-                autoresponse: `
-          Hi ${userName},
-
-          Thank you for contacting SiliconVista!
-          We have received your enquiry and will respond shortly.
-
-          Regards,
-          SiliconVista Team
-        `,
+                      Thank you for contacting SiliconVista!
+                      We received your enquiry and will respond shortly.
+                    
+                      Regards,
+                      SiliconVista Team
+                    `,
             };
 
             const response = await fetch("https://api.web3forms.com/submit", {
