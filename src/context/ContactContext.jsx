@@ -38,14 +38,14 @@ export const ContactProvider = ({ children }) => {
         try {
             // ----- PAYLOAD FOR WEB3FORMS -----
             const payload = {
-                access_key: "ffe8fe09-1467-4a3c-a337-cae66a6497c8",
+                access_key: "5dfa89cc-8194-4229-a58d-5fe9de59b11f",
                 subject: "New Enquiry from Website",
 
                 from_name: userName,
                 from_email: email,
 
                 // Admin email (YOUR inbox)
-                email: "akashms7117@gmail.com",
+                email: "siliconvista.org.enquiry@gmail.com",
 
                 message: `
           Name: ${userName}
@@ -53,19 +53,6 @@ export const ContactProvider = ({ children }) => {
           Phone: ${phone}
           Message: ${message}
         `,
-
-                reply_to: email,
-                auto_reply: "true",
-                auto_reply_subject: "Thanks for contacting SiliconVista!",
-                auto_reply_message: `
-                        Hi ${userName},
-
-                      Thank you for contacting SiliconVista!
-                      We received your enquiry and will respond shortly.
-                    
-                      Regards,
-                      SiliconVista Team
-                    `,
             };
 
             const response = await fetch("https://api.web3forms.com/submit", {
