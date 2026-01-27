@@ -6,12 +6,7 @@
     width: 100%;
     height: 450px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-  background: linear-gradient(
-    135deg,
-    #1F5F2A 0%,
-    #2E7D32 45%,
-    #3FA34D 100%
-  ), url("../assets/circuit2.webp");
+  background: linear-gradient(90deg, #00C6A0, #2196F3, #7A1FA2), url("../assets/circuit.webp");
 
     background-size: cover;
     background-position: center;
@@ -28,7 +23,7 @@
     flex-direction: column;
 }
 .heroContentAbt h1{
-    color: #7CFF7A;
+    color:#333;
     font-family: "poppins";
     font-size: 40px;
     font-weight: 600;
@@ -58,14 +53,14 @@
 .aboutBox h2 {
   font-family: "Poppins";
   font-size: 26px;
-  color: #1f5f2a;
+  color:#00C6A0;
   margin-bottom: 16px;
 }
 
 .aboutBox h3 {
   font-family: "Poppins";
   font-size: 22px;
-  color: #2e7d32;
+  color:#00C6A0;
   margin-top: 24px;
   margin-bottom: 12px;
 }

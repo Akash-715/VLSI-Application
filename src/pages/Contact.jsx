@@ -101,7 +101,7 @@ const Contact = () => {
                     <h1>Contact Details</h1>
 
                     <p>Email: company@gmail.com</p>
-                    <p>Phone: 2346718901</p>
+                    <p>Phone: +91 63694 98025</p>
                     <p>Location: Chennai</p>
                 </div>
             </div>

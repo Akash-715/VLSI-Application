@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 60px;
+    padding: 0 10px;
     background: white;
 
     z-index: 1000;
@@ -32,6 +32,27 @@
     font-family: "poppins";
     color:black;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand img{
+    width: 110px;
+    height: 110px;
+}
+
+.brand a{
+    text-decoration: none;
+    color: #0c110c;
+}
+
+.brand span{
+    background: linear-gradient(90deg, #00C6A0, #2196F3, #7A1FA2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 28px;
 }
 
 .navLinks{
@@ -47,36 +68,36 @@
     color: black;
 }
 
-.mainNav a{
+.navLinks a{
     position: relative;
     text-decoration: none;
     color: black;
     transition: transfrom 0.5s ease;
 }
 
-.mainNav a::after{
+.navLinks a::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -6px;
     width: 0;
     height: 3px;
-    background:  #077006;
+    background: #00C6A0;
     transition: width 0.5s ease;
 }
 
 
-.mainNav a.active {
+.navLinks a.active {
   transform: translateX(12px);
 }
 
-.mainNav a.active::after {
+.navLinks a.active::after {
   width: 100%;
 }
 
 
-.mainNav a.active{
-    color:  #077006;
+.navLinks a.active{
+    color:  #00C6A0;
 }
 
 .mainNav.scrolled{
@@ -85,7 +106,7 @@
 }
 
 .mainNav.scrolled a::after{
-    background-color: #077006;
+    background-color: #00C6A0;
 }
 
 .hamburger{
@@ -111,7 +132,7 @@
 
   .brand{
       font-size: 13px;
-      max-width: 150px;
+      max-width: 180px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -209,5 +230,24 @@
 .mainNav.scrolled a::after{
     background-color: black;
 }
+
+.brand img{
+    width: 70px;
+    height: 70px;
+}
+
+.brand a{
+    text-decoration: none;
+    color: #0c110c;
+}
+
+.brand span{
+    background: linear-gradient(90deg, #00C6A0, #2196F3, #7A1FA2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 18px;
+}
+
 
 }

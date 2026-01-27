@@ -8,12 +8,7 @@
     width: 100%;
     height: 450px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-    background: linear-gradient(
-    135deg,
-    #1F5F2A 0%,
-    #2E7D32 45%,
-    #3FA34D 100%
-    ) , url("../assets/courseHero.webp");
+    background:#54615f  url("../assets/courseHero.webp");
 
     background-size: cover;
     background-position: center;
@@ -31,7 +26,7 @@
     flex-direction: column;
 }
 .heroContent h1{
-    color: #3FA34D;
+    color:#a189b6;
     font-family: "poppins";
     font-size: 40px;
     font-weight: 600;
@@ -49,18 +44,20 @@
 
 .courseDetails{
     background: linear-gradient(
-    135deg,
-    #2E7D32 45%,
-    #3FA34D 100%
+            135deg,
+            #00C6A0,
+            #00D0E8,
+            #2196F3,
+            #a189b6
     );
     border-radius: 20px;
-    margin-left: 10px;
-    margin: 20px 0px 150px 10px;
+    margin: 20px 0px 150px 20px;
+    padding: 30px;
 }
 
 .courseDetails h1{
     margin-top: 15px;
-    color: #7CFF7A;
+    color: black;
     font-family: 'poppins';
     font-weight: 600;
     padding-left: 10px;
@@ -68,7 +65,7 @@
 }
 
 .courseDetails h2{
-    color: #6eec6c;
+    color: black;
     font-family: "poppins";
     font-weight: 600;
     padding-left: 10px;
@@ -98,7 +95,7 @@
     content: "";
     width: 10px;
     height: 10px;
-    background-color:#7CFF7A;
+    background-color: white;
     transform: rotate(45deg);
     margin-top: 6px;
     flex-shrink: 0;
@@ -112,6 +109,7 @@
 
 .courseFeatures{
     margin: 20px 0px 150px 30px;
+    padding: 30px;
 }
 
 .courseFeatures h1{
@@ -178,20 +176,22 @@
 
 .courseContent{
   height: 100%;
-  margin: 20px;
+  margin: 50px;
   box-shadow: 0px 0px 5px 5px #beb8b8;
   display: flex;
   flex-direction: column;
   font-family: "poppins";
   gap: 40px;
   padding-bottom: 100px;
+  border-radius: 20px;
 }
 
 .courseContent h1{
+  padding-top: 20px;
   text-align: center;
   font-weight: 600;
   font-size: 32px;
-  color:#3FA34D;
+  color:#00C6A0;
 }
 
 .courseBlock{
@@ -247,6 +247,7 @@
   font-family: "poppins";
   font-size: 15px;
   color: #073738;
+  padding-left: 10px;
 }
 
 
@@ -254,7 +255,7 @@
   content: "";
   width: 8px;
   height: 8px;
-  background-color: #3FA34D;
+  background-color: #00C6A0;
   transform: rotate(45deg);
   margin-top: 6px;
   flex-shrink: 0;
@@ -265,7 +266,7 @@
   cursor: pointer;
   font-weight: 700;
   white-space: nowrap;
-  color: #3FA34D;
+  color: #00C6A0;
 }
 
 .courseBlock .more{

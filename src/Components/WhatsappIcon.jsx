@@ -5,7 +5,7 @@ import './whatsapp.css';
 
 const WhatsappIcon = () => {
 
-    const phone = "919159462524";
+    const phone = "916369498025";
     const message = "Hi, I want to know about VLSI courses";
 
     // Try desktop app first

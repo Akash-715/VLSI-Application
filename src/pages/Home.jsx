@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import Footer from '../Components/Footer.jsx';
 
-import descImage from '../assets/descImage.webp'
+import Footer from '../Components/Footer.jsx';
+import HeroCarousel from '../Components/HeroCarousel.jsx';
+
+import descImage from '../assets/descImage.webp';
 
 const Home = () => {
 
@@ -46,16 +48,8 @@ const Home = () => {
 
   return (
     <div className='homeDiv'>
-      <div className='sloganDiv'>
-          <div className='sloganGreen'>
-            <h1 id='head'>Silicon Vista</h1>
-            <p id='slogan'>Build Your VLSI Career from the Ground Up.</p>
-          </div>
 
-          <div className='sloganImage'>
-            
-          </div>
-      </div>
+    <HeroCarousel />
 
       <div className='descDiv'>
       <div className="descContent">
@@ -72,7 +66,7 @@ const Home = () => {
           <li>Hands-on projects with real tools</li>
           <li>Internship & real-time exposure</li>
           <li>Expert mentors from semiconductor industry</li>
-          <li>Placement assistance & career guidance</li>
+          <li>Offers Advanced VLSI Design Verification</li>
           <li>Courses for freshers & professionals</li>
           <li>Our real-time, hands-on training combined with individual one-on-one mentoring ensures you understand every concept deeply and progress with confidence.</li>
         </ul>

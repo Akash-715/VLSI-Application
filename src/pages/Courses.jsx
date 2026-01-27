@@ -8,7 +8,7 @@ const Courses = () => {
 
     const courseContent = [
       {
-        Title: "Semiconductor Overview" ,
+        Title: "Semiconductor Introduction" ,
         Tags: {Duration: ""} ,
         Modules : ["ASIC/FPGA Technologies & Flow" , "EDA Tools"]
       } , 
@@ -42,11 +42,6 @@ const Courses = () => {
                     "Synthesis Basics"
                   ]
 
-      },
-      {
-        Title: "Verification Concepts",
-        Tags: {Duration: ""} ,
-        Modules: ["Real-time verification scenarios"]
       },
       {
         Title: "System Verilog",

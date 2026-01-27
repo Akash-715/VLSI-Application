@@ -11,10 +11,11 @@
     padding: 50px;
     height: 600px;
     background: linear-gradient(
-    135deg,
-    #1F5F2A 0%,
-    #2E7D32 45%,
-    #3FA34D 100%
+            135deg,
+            #00C6A0,
+            #00D0E8,
+            #2196F3,
+            #a189b6
     );
     border-radius: 25px;
 
@@ -44,7 +45,7 @@
 .Form .form-control::placeholder{
     font-family: "Poppins";
     font-weight: 600;
-    color:#3FA34D;
+    color:#00C6A0;
     opacity: 1;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .Form button{
-    background-color: #37a946;
+    background-color:#2196F3;
     color: white;
     font-family: "poppins";
     font-weight: 600;
@@ -75,7 +76,7 @@
 }
 
 .Form button:hover{
-    background-color: #37a946;
+    background-color: #2196F3;
     color: white;
     transition: transform 0.3s ease;
     transform: scale(1.07);
