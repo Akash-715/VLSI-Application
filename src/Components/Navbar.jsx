@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import ReactDOM from "react-dom";
 
+import logo from "../assets/logo2.png";
+
 import './navbar.css';
 
 const Navbar = () => {
@@ -36,7 +38,10 @@ const Navbar = () => {
       {/* NAVBAR HEADER */}
       <div className={`mainNav ${scrolled ? "scrolled" : ""}`}>
 
-        <div className="brand">Company Name & Logo</div>
+        <div className="brand">
+         <NavLink to={"/"}><img src={logo} /></NavLink>
+          <NavLink to={"/"}><span>Silicon Vista</span></NavLink>
+        </div>
 
         <ul className="navLinks">
           <li><NavLink to="/">Home</NavLink></li>

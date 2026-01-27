@@ -15,12 +15,12 @@
       position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    135deg,
-    #1F5F2A 0%,
-    #2E7D32 45%,
-    #3FA34D 100%
-  ), url('./assets/circuit2.webp');  
+    background: linear-gradient(
+            135deg,
+            #00C6A0,
+            #2196F3,
+            #462563
+    ), url('./assets/circuit.webp');
 
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -59,22 +59,22 @@
     font-family: "poppins";
     color: white;
     padding: 100px 10px 0px 150px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight:600;
 }
 
 #slogan{
     padding: 20px 10px 0px 150px; 
-    color: #7CFF7A;
+    color:#073738;
     font-family: "poppins";
-    font-size: 18px;
+    font-size: 20px;
     margin-top: -20px;
 }
 
 .descDiv{
     display: grid;
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 20px;
     grid-template-columns: 60% 40%;
 }
@@ -89,6 +89,7 @@
 .descContent{
     font-family: "poppins";
     padding: 10px;
+    padding-top: 50px;
 }
 
 .descContent p{
@@ -131,7 +132,8 @@
     margin-top: 30px;
     margin-left: 30px;
     filter: brightness(0.95) contrast(0.95);
-    border-radius: 16px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 
@@ -140,12 +142,12 @@
     grid-template-columns: 50% 50%;
     width: 100%;
     height: 400px;
-    box-shadow: 2px 1px 0px 0px;
     background: linear-gradient(
-    135deg,
-    #1F5F2A 0%,
-    #2E7D32 45%,
-    #3FA34D 100%
+            135deg,
+            #00C6A0,
+            #00D0E8,
+            #2196F3,
+            #a189b6
     );
 }
 
@@ -158,11 +160,12 @@
 
 .discountWords p{
     margin-top: -10px;
-    color:#fff;
+    color:white;
 }
 
 
 .discountWords h1{
+    color: #073738;
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -184,7 +187,7 @@
     content: "";
     width: 10px;
     height: 10px;
-    background-color:#ffffff;
+    background-color: white;
     transform: rotate(45deg);
     margin-top: 6px;
     flex-shrink: 0;
@@ -288,6 +291,25 @@
 .answer.active{
     display: block;
 }
+
+/* Hero Carousel */
+
+/* Slide size */
+.hero-swiper,
+.swiper-slide {
+  width: 100%;
+  height: 650px;
+}
+
+/* Image inside slides */
+.hero-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: white; 
+}
+
 
 /* ============================= */
 /* ===== MOBILE RESPONSIVE ===== */
@@ -474,5 +496,10 @@
       padding: 80px 16px 0;
       text-align: center;
       font-size: 28px;
+  }
+
+  .hero-swiper,
+  .swiper-slide {
+    height: 450px;
   }
 }
