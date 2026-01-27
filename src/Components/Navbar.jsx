@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import ReactDOM from "react-dom";
 
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo2.webp";
 
 import './navbar.css';
 
