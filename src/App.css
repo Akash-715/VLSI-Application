@@ -12,15 +12,10 @@
 }
 
 .sloganGreen{
-      position: absolute;
+  position: absolute;
   inset: 0;
 
-    background: linear-gradient(
-            135deg,
-            #00C6A0,
-            #2196F3,
-            #462563
-    ), url('./assets/circuit.webp');
+    background: url('./assets/Hero2.png');
 
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -58,16 +53,16 @@
 #head{
     font-family: "poppins";
     color: white;
-    padding: 100px 10px 0px 150px;
-    font-size: 50px;
+    padding: 150px 10px 0px 150px;
+    font-size: 75px;
     font-weight:600;
 }
 
 #slogan{
-    padding: 20px 10px 0px 150px; 
-    color:#073738;
+    padding: 20px 10px 0px 170px; 
+    color:#0c110c;
     font-family: "poppins";
-    font-size: 20px;
+    font-size: 25px;
     margin-top: -20px;
 }
 
@@ -84,6 +79,7 @@
     padding: 20px 0px 0px 40px;
     font-size: 35px;
     font-weight: 700;
+    color: #2196F3;
 }
 
 .descContent{
@@ -242,12 +238,14 @@
 }
 
 .faqDiv h1{
+    color: #2196F3;
     font-family: "poppins";
     padding: 50px 0px 0px 50px;
     font-weight: 500;
 }
 
 .faqDiv h2{
+    color:#2196F3;
     font-family: "poppins";
     margin-top:-5px;
     margin-left: 70px;
@@ -308,6 +306,33 @@
   object-fit: contain;
   display: block;
   background: white; 
+}
+
+.swiper-slide1 {
+    width: 100%;
+    height: 650px;
+    background: url("./assets/Carousal.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide2{
+    width: 100%;
+    height: 650px;
+    background: url("./assets/Carousal2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide2 p{
+    color: white;
+    padding-top: 500px;
+    padding-left: 500px;
+    font-size: 35px;
+}
+
+.swiper-slide2 b{
+    color: #3FA34D;
 }
 
 
@@ -501,5 +526,28 @@
   .hero-swiper,
   .swiper-slide {
     height: 450px;
+  }
+
+  .swiper-slide2 {
+      height: 420px;                   /* reduce height for small screens */
+      background-position: center top; /* show important part */
+  }
+
+  .swiper-slide2 p {
+      padding-top: 290px;             
+      padding-left: 20px;            
+      padding-right: 20px;           
+      font-size: 22px;                
+      line-height: 1.4;
+      text-align: left;               
+  }
+
+  .swiper-slide1 {
+    height: 420px;
+    aspect-ratio: 16/9; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white; 
   }
 }
