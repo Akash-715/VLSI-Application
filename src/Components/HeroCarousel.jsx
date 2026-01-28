@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 import cc from "../assets/cc.webp";
-import cc3 from "../assets/Carousal.png";
+import cc3 from "../assets/cc2.jpg";
 import cc4 from "../assets/Carousal2.png";
 
 import "swiper/css";
@@ -38,14 +38,14 @@ const HeroCarousel = () => {
        </SwiperSlide>
 
     <SwiperSlide>
-        <div className="swiper-slide">
-          <img src= {cc3} />
+        <div className="swiper-slide1">
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="swiper-slide">
-            <img src= {cc4} />
+        <div className="swiper-slide2">
+          <p>Advance Your <b>VLSI Career</b> with <br /> 
+            <b>Industry Leading Online Training</b></p>
         </div>
       </SwiperSlide>
     </Swiper>
