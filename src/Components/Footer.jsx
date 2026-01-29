@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="footerCol">
           <h3>Contact</h3>
           <p>Email: company@gmail.com</p>
-          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Phone: +91 63694 98025</p>
           <p>Location: Chennai, India</p>
         </div>
 

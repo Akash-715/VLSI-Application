@@ -45,7 +45,7 @@ const Navbar = () => {
 
         <ul className="navLinks">
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/about">About Us</NavLink></li>
           <li><NavLink to="/courses">Courses</NavLink></li>
           <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
@@ -59,7 +59,7 @@ const Navbar = () => {
       {ReactDOM.createPortal(
         <div className={`menu ${openMenu ? "active" : ""}`}>
           <NavLink to="/" onClick={() => setOpenMenu(false)}>Home</NavLink>
-          <NavLink to="/about" onClick={() => setOpenMenu(false)}>About</NavLink>
+          <NavLink to="/about" onClick={() => setOpenMenu(false)}>About Us</NavLink>
           <NavLink to="/courses" onClick={() => setOpenMenu(false)}>Courses</NavLink>
           <NavLink to="/contact" onClick={() => setOpenMenu(false)}>Contact</NavLink>
         </div>,

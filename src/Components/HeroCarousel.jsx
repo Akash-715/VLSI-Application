@@ -2,9 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
-import cc from "../assets/cc.webp";
-import cc3 from "../assets/cc2.jpg";
-import cc4 from "../assets/Carousal2.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -37,10 +34,28 @@ const HeroCarousel = () => {
         </div>
        </SwiperSlide>
 
-    <SwiperSlide>
-        <div className="swiper-slide1">
-        </div>
-      </SwiperSlide>
+        <SwiperSlide>
+          <div className="swiper-slide1">
+
+            <div className="slide1-text-box">
+              <h1 className="slide1-title">
+                Silicon<span>Vista</span>
+              </h1>
+
+              <h2 className="slide1-subtitle">
+                Your Online VLSI Training Institute
+              </h2>
+
+              <ul className="slide1-points">
+                <li>✔ Hands-on real-time VLSI training</li>
+                <li>✔ Expert personal guidance with 1-on-1 sessions</li>
+                <li>✔ Step-by-step learning from basics to advanced verification</li>
+              </ul>
+            </div>
+
+          </div>
+        </SwiperSlide>
+
 
       <SwiperSlide>
         <div className="swiper-slide2">

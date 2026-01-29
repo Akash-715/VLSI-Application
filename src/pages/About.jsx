@@ -13,6 +13,7 @@ const About = () => {
       <div className='aboutHero'>
         <div className='heroContentAbt'>
           <h1>About SiliconVista</h1>
+          <h3>Online VLSI Learning Designed for Your Success</h3>
         </div>
       </div>
 
@@ -64,6 +65,16 @@ const About = () => {
             SiliconVista – Learn VLSI. Build Careers.
           </p>
 
+          <h3>Our Mission</h3>
+
+          <p>
+            Our mission is to empower students and professionals with the confidence, clarity,
+            and skills needed to excel in semiconductor design, verification, and emerging chip technologies.
+          </p>
+
+          <p className='highlightText'>
+            To make advanced VLSI education accessible, practical, and career-oriented for every learner.
+          </p>
 
           <h3>Our Commitment</h3>
 

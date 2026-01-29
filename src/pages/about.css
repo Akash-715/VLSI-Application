@@ -30,6 +30,11 @@
     padding-top: 150px;
 }
 
+.heroContentAbt h3{
+  color:aqua;
+  font-family: "poppins";
+}
+
 /* GRID SECTION */
 .aboutContentGrid {
   max-width: 1500px;
@@ -74,6 +79,7 @@
 
 .boxText {
   width: 60%;
+  text-align: justify;
 }
 
 .boxImage {

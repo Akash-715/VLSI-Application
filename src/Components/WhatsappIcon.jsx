@@ -8,15 +8,22 @@ const WhatsappIcon = () => {
     const phone = "916369498025";
     const message = "Hi, I want to know about VLSI courses";
 
-    // Try desktop app first
-    const WhatsAppURL = `whatsapp://send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    const whatsappDesktop = `whatsapp://send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    const whatsappWeb = `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
 
+    const handleClick = () => {
+
+      window.location.href = whatsappDesktop;
+
+      setTimeout(() => {
+        window.open(whatsappWeb, "_blank");
+      }, 1200);
+    };
+    
   return (
     <a
-      href={WhatsAppURL}
+      onClick={handleClick}
       className='whatsApp_float'
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <FaWhatsapp className='whatsapp_icon' />
     </a>
