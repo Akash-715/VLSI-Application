@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './course.css';
 import Footer from '../Components/Footer';
+import { Helmet } from "react-helmet-async";
 
 const Courses = () => {
 
@@ -88,6 +89,96 @@ const Courses = () => {
     
   return (
     <div className='course' >
+
+      <Helmet>
+        <script type="application/ld+json">
+            {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "VLSI Courses - SiliconVista",
+              "url": "https://siliconvista.in/courses",
+              "itemListElement": [
+                {
+                  "@type": "Course",
+                  "position": 1,
+                  "name": "VLSI Design Verification Course",
+                  "description": "Industry-oriented online VLSI Design Verification course covering SystemVerilog, UVM, testbenches, and real-time projects.",
+                  "provider": {
+                    "@type": "EducationalOrganization",
+                    "name": "SiliconVista",
+                    "url": "https://siliconvista.in"
+                  }
+                },
+                {
+                  "@type": "Course",
+                  "position": 2,
+                  "name": "VLSI Internship Program",
+                  "description": "Hands-on VLSI internship with real semiconductor projects, mentor-led learning, and industry exposure.",
+                  "provider": {
+                    "@type": "EducationalOrganization",
+                    "name": "SiliconVista",
+                    "url": "https://siliconvista.in"
+                  }
+                }
+              ]
+            }
+            `}
+        </script>
+      </Helmet>
+
+
+
+        <Helmet>
+            <title>VLSI Courses | SiliconVista – Design Verification & Chip Design Training</title>
+
+            <meta 
+              name="description" 
+              content="Explore SiliconVista’s VLSI courses including Design Verification, UVM, internships, and semiconductor fundamentals. Learn with real-time tools and industry experts."
+            />
+
+
+            <meta name="keywords" content="
+                vlsi courses online,
+                systemverilog course syllabus,
+                uvm full course online,
+                vlsi design verification course india,
+                best vlsi course for freshers,
+                online vlsi internship,
+                chip design course online,
+                advanced vlsi course,
+                semiconductor course online,
+                vlsi professional training,
+                vlsi real-time project course,
+                learn uvm online,
+                learn systemverilog from scratch,
+                vlsi design course with placement,
+                industry-ready vlsi course,
+                online digital electronics course,
+                asic verification course,
+                rtl design course online,
+                top vlsi training courses,
+                vlsi verification engineer training,
+                verification and validation course,
+                vlsi testing course,
+                complete vlsi course package
+            " />
+
+
+
+            <link rel="canonical" href="https://siliconvista.in/courses" />
+
+            
+            <meta property="og:title" content="VLSI Courses – Learn Chip Design & Verification" />
+            <meta property="og:description" content="Hands-on VLSI courses with real-time industry tools and expert-led sessions." />
+            <meta property="og:image" content="https://siliconvista.in/og-courses.png" />
+            <meta property="og:url" content="https://siliconvista.in/courses" />
+
+            
+            <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
+
       <div className='courseHero'>
         <div className='heroContent'>
           <h1>Comprehensive VLSI Design Verification Course</h1>

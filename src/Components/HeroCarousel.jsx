@@ -27,6 +27,14 @@ const HeroCarousel = () => {
             <div className="sloganGreen">
                 <h1 id="head">Silicon Vista</h1>
                 <p id="slogan">Online VLSI Training Institute</p>
+                
+                <img 
+                  src='./assets/Hero2.png'
+                  alt="Semiconductor and VLSI training banner by SiliconVista"
+                  className="hidden-seo-img"
+                />
+
+
             </div>
 
             <div className="sloganImage"></div>
@@ -53,6 +61,12 @@ const HeroCarousel = () => {
               </ul>
             </div>
 
+              <img 
+                src="./assets/Carousal1.webp"
+                alt="Advanced VLSI career development training banner"
+                className="hidden-seo-img"
+              />
+
           </div>
         </SwiperSlide>
 
@@ -61,6 +75,13 @@ const HeroCarousel = () => {
         <div className="swiper-slide2">
           <p>Advance Your <b>VLSI Career</b> with <br /> 
             <b>Industry Leading Online Training</b></p>
+
+            <img 
+              src="./assets/Carousal2.webp"
+              alt="VLSI online course promotion by SiliconVista"
+              className="hidden-seo-img"
+            />
+
         </div>
       </SwiperSlide>
     </Swiper>

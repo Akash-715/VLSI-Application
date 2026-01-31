@@ -4,16 +4,17 @@ import './index.css'
 import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { HelmetProvider } from 'react-helmet-async';
 
 import { ContactProvider } from './context/ContactContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-
-  <ContactProvider>
-        <App />
-  </ContactProvider>
-
+      <HelmetProvider>
+        <ContactProvider>
+              <App />
+        </ContactProvider>
+      </HelmetProvider>
   </BrowserRouter>
 
 )

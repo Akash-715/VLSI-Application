@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./contact.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Helmet } from "react-helmet-async";
 
 import Footer from "../Components/Footer.jsx";
 import { useContact } from "../context/ContactContext.jsx";
@@ -42,6 +43,45 @@ const Contact = () => {
 
     return (
         <div className="contactDiv">
+
+            <Helmet>
+                <title>Contact Us | SiliconVista – VLSI Training & Internship Queries</title>
+
+                <meta 
+                    name="description" 
+                    content="Contact SiliconVista for VLSI course details, internship programs, fees, and enrollment queries. Available via email, phone, and WhatsApp."
+                />
+
+
+                <meta name="keywords" content="
+                        siliconvista contact,
+                        vlsi training in chennai,
+                        vlsi coaching institute india,
+                        contact vlsi institute,
+                        best vlsi institute near me,
+                        online vlsi course support,
+                        vlsi classes enquiry,
+                        vlsi admission helpline,
+                        semiconductor training institute contact,
+                        vlsi internship contact,
+                        systemverilog course enquiry,
+                        online technical training support,
+                        chip design course india contact,
+                        vlsi career guidance,
+                        uvm training india
+                " />
+
+
+
+                <link rel="canonical" href="https://siliconvista.in/contact" />
+
+                {/* OG */}
+                <meta property="og:title" content="Contact SiliconVista – Get VLSI Course Info" />
+                <meta property="og:image" content="https://siliconvista.in/og-contact.png" />
+                <meta property="og:url" content="https://siliconvista.in/contact" />
+            </Helmet>
+
+
             <div className="contactWrapper">
                 <div className="contactForm">
                     <span id="ques">Any Enquiry ?</span> <br />

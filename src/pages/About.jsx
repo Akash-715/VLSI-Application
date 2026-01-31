@@ -1,6 +1,13 @@
 import React from 'react';
 import './about.css';
 
+import { Helmet } from "react-helmet-async";
+import { FaBullseye, FaRocket , FaHandshake , FaHandsHelping, FaShieldAlt} from "react-icons/fa";
+import { RiEyeLine } from "react-icons/ri";
+import { MdOutlineTrackChanges } from "react-icons/md";
+
+
+
 import Footer from '../Components/Footer.jsx';
 import aboutImg from '../assets/about.webp';
 import visionImg from '../assets/vision.webp';
@@ -8,6 +15,57 @@ import visionImg from '../assets/vision.webp';
 const About = () => {
   return (
     <div className='about'>
+
+      <Helmet>
+          <title>About Us | SiliconVista – VLSI & Semiconductor Training Institute</title>
+
+          <meta 
+            name="description" 
+            content="Learn about SiliconVista — a trusted online VLSI training platform offering hands-on chip design education, expert mentoring, and industry-oriented learning."
+          />
+
+
+          <meta name="keywords" content="
+                about siliconvista,
+                online vlsi institute india,
+                best semiconductor training institute,
+                vlsi training platform,
+                vlsi education provider,
+                trusted vlsi institute,
+                vlsi coaching center india,
+                vlsi design education,
+                semiconductor skill development,
+                vlsi learning platform,
+                vlsi e-learning institute,
+                chip design learning center,
+                systemverilog training institute,
+                uvm training institute,
+                online electronics training,
+                vlsi institute for beginners,
+                career-focused vlsi institute,
+                industry-based vlsi training,
+                learn semiconductor online,
+                what is siliconvista,
+                siliconvista vlsi verification training,
+                online technical training institute,
+                semiconductor design education
+          " />
+
+
+
+          <link rel="canonical" href="https://siliconvista.in/about" />
+
+          {/* OG */}
+          <meta property="og:title" content="About SiliconVista – Online VLSI Institute" />
+          <meta property="og:description" content="Know our vision, mission, and why SiliconVista is the trusted platform for VLSI learning." />
+          <meta property="og:image" content="https://siliconvista.in/og-about.png" />
+          <meta property="og:url" content="https://siliconvista.in/about" />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
+
 
       {/* HERO SECTION */}
       <div className='aboutHero'>
@@ -42,7 +100,7 @@ const About = () => {
           </p>
             </div>
           <div className='boxImage'>
-              <img src= {aboutImg} />
+              <img src= {aboutImg} alt="Students learning VLSI concepts at SiliconVista" />
           </div>
           </div>
           
@@ -54,7 +112,10 @@ const About = () => {
           <div className='boxFlex'>
             <div className='boxText'>
 
-          <h2>Our Vision</h2>
+          <h2 className="iconHeading">
+            <RiEyeLine className="headingIcon" />
+              Our Vision 
+          </h2>
           <p>
             To become a trusted learning platform that empowers students and
             professionals with clear knowledge, hands-on exposure, and
@@ -65,7 +126,11 @@ const About = () => {
             SiliconVista – Learn VLSI. Build Careers.
           </p>
 
-          <h3>Our Mission</h3>
+          <h3 className="iconHeading">
+            <FaRocket className="headingIcon" />
+              Our Mission
+          </h3>
+
 
           <p>
             Our mission is to empower students and professionals with the confidence, clarity,
@@ -76,7 +141,10 @@ const About = () => {
             To make advanced VLSI education accessible, practical, and career-oriented for every learner.
           </p>
 
-          <h3>Our Commitment</h3>
+          <h3 className="iconHeading">
+            <FaHandsHelping className="headingIcon" />
+              Our Commitment
+          </h3>
 
           <p>At <b>SiliconVista</b>, we are committed to:</p>
 
@@ -95,7 +163,7 @@ const About = () => {
             </div>
 
           <div className='boxImage'>
-            <img src = {visionImg} />
+            <img src = {visionImg} alt="SiliconVista mission and vision illustration about VLSI training" />
           </div>
 
           </div>

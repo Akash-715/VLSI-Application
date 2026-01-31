@@ -71,6 +71,18 @@
   margin-bottom: 12px;
 }
 
+.iconHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headingIcon {
+  font-size: 28px;
+  color:#2196F3; /* matches your theme */
+}
+
+
 .boxFlex {
   display: flex;
   align-items: center;
