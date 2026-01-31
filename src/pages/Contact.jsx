@@ -104,7 +104,7 @@ const Contact = () => {
                                     name="duration"
                                     onChange={handleFields}
                                     value={formFields.duration || ""}
-                                    placeholder="Enter The Duration You Needed"
+                                    placeholder="Enter The Duration"
                                 />
                                 </Form.Group>
                             )}
@@ -134,9 +134,9 @@ const Contact = () => {
                 <div className="contactDetails">
                     <h1>Contact Details</h1>
                 <div className="paraDiv">
-                    <p>Email: company@gmail.com</p>
+                    <p>Email: info@siliconvista.in</p>
                     <p>Phone: +91 63694 98025</p>
-                    <p>Location: Chennai,India</p>
+                    <p>Location: Chennai, India</p>
                 </div>
                 </div>
             </div>

@@ -80,21 +80,21 @@ const Courses = () => {
       {
         Title: "Real Time Project Training",
         Tags: {Duration: ""} ,
-        Modules: ["Students will get a chance to work on a Active Real Time Project involving AXI Interconnect/PCI Express and build their professional expertise."]
+        Modules: ["Students will get a chance to work on a Active Real Time Projects"]
       }
     ]
 
 
     
   return (
-    <div className='course'>
+    <div className='course' >
       <div className='courseHero'>
         <div className='heroContent'>
           <h1>Comprehensive VLSI Design Verification Course</h1>
         </div>
       </div>
 
-      <div className='courseOutline'>
+      <div className='courseOutline' id='co'>
         <div className='courseDetails'>
           <h1>Professional Development Program in VLSI Design Verification</h1>
 
@@ -141,7 +141,7 @@ const Courses = () => {
         </div>
       </div>
 
-        <div className='courseContent'>
+        <div className='courseContent' id='cd'>
           <h1>Course Content</h1>
 
               {courseContent.map((course, index) => (

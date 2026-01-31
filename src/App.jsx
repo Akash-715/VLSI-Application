@@ -1,5 +1,6 @@
 import './App.css'
 import {Routes , Route} from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 import Navbar from './Components/Navbar.jsx';
 import WhatsappIcon from './Components/WhatsappIcon.jsx';
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
 
       <ScrollToTop />
+      
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/about" element = {<About />} />

@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Footer from '../Components/Footer.jsx';
 import HeroCarousel from '../Components/HeroCarousel.jsx';
 
-import descImage from '../assets/descImage.webp';
+import descImage from '../assets/desImg.webp';
+
 
 const Home = () => {
 
@@ -55,7 +56,7 @@ const Home = () => {
       <div className="descContent">
         <h1>Why You Need to Choose Us?</h1>
 
-        <p>
+        <p id='descPara'>
           <b>SiliconVista offers Design Verification Courses </b> and bridge the gap between academic knowledge and real-world semiconductor
           industry requirements. Our VLSI programs are designed by industry experts
           to make you job-ready, not just certificate-ready.
@@ -70,6 +71,27 @@ const Home = () => {
           <li>Courses for freshers & professionals</li>
           <li>Our real-time, hands-on training combined with individual one-on-one mentoring ensures you understand every concept deeply and progress with confidence.</li>
         </ul>
+
+      <div className="descCards">
+
+        <div className="descCard">
+          <h3>Government Certified</h3>
+          <p>Trusted certification that adds strong value to your resume.</p>
+        </div>
+
+        <div className="descCard">
+          <h3>Hands-On Experience</h3>
+          <p>Work with real industry tools and practical design flows.</p>
+        </div>
+
+        <div className="descCard">
+          <h3>Real-Time VLSI Projects</h3>
+          <p>Gain experience through practical verification & design projects.</p>
+        </div>
+
+      </div>
+
+
       </div>
 
       <div className='descImage'>
@@ -78,7 +100,7 @@ const Home = () => {
 
       </div>
 
-      <div className='discountDiv'>
+      <div className='discountDiv' id='internship'>
         <div className='discountWords'>
           <h1>Internship Program</h1>
 

@@ -6,7 +6,7 @@
 
 .sloganDiv{
   position: relative;
-  height: 650px;
+  height: 660px;
   width: 100%;
   overflow: hidden;
 }
@@ -69,8 +69,9 @@
 .descDiv{
     display: grid;
     width: 100%;
-    height: 600px;
+    height: 100%;
     margin-top: 20px;
+    margin-bottom: 20px ;
     grid-template-columns: 60% 40%;
 }
 
@@ -88,7 +89,7 @@
     padding-top: 50px;
 }
 
-.descContent p{
+#descPara{
     margin-top: 15px;
     padding:  0px 0px 0px 50px;
     color:#073738;
@@ -125,15 +126,56 @@
 }
 
 .descImage img{
-    height: 90%;
-    width: 90%;
+
+    height: 100%;
+    width: 100%;
     margin-top: 30px;
     margin-left: 30px;
     filter: brightness(0.95) contrast(0.95);
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 75px;
+    padding: 50px;
 }
 
+.descCards {
+  margin-top: 30px;
+  padding-left: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.descCard {
+  background: white;
+  width: 32%;
+  padding: 20px 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Poppins";
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #2196F3;
+  border-right: 6px solid #2196F3;
+}
+
+.descCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #073738;
+  margin-bottom: 10px;
+}
+
+.descCard p {
+  color: #425b55;
+  font-size: 15px;
+  text-align: justify;
+  
+}
+
+/* Hover effect */
+.descCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  border-left-color: #00C6A0;
+  border-right-color: #00C6A0;
+}
 
 .discountDiv{
     display: grid;
@@ -164,7 +206,7 @@
 
 
 .discountWords h1{
-    color:rgb(0, 0, 0);
+    color:#0c110c;
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -215,16 +257,16 @@
     margin: 0;          
 }
 
-/* FREE */
+/* Internship */
 .discountPercentage h1{
     font-size: 40px;
     letter-spacing: 6px;
-    color:#3FA34D;
+    color:#00C6A0;
     margin: 20px 0;
     line-height: 1;    
 }
 
-/* Internship */
+
 .discountPercentage p{
     font-size: 18px;
     letter-spacing: 3px;
@@ -270,7 +312,7 @@
     background: none;
     border: none;
     font-weight: 800;
-    color:#0c110c;
+    color:#2196F3;
     font-size: 24px;
     padding: 5px 3px 0px 0px ;
     cursor: pointer;
@@ -462,7 +504,7 @@
       font-size: 28px;
   }
 
-  .descContent p{
+  #descPara{
       padding-left: 0;
       font-size: 15px;
   }
@@ -472,11 +514,19 @@
   }
 
   .descImage img{
-      width: 320px;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 12px;
+    display: none;
   }
+
+.descCards {
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.descCard {
+  width: 90%;
+  margin: 0 auto;
+}
+
 
   /* ---------- DISCOUNT SECTION ---------- */
 

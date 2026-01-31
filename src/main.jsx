@@ -9,10 +9,10 @@ import { ContactProvider } from './context/ContactContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+
   <ContactProvider>
         <App />
   </ContactProvider>
-
 
   </BrowserRouter>
 

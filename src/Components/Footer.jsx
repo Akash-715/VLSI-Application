@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import './footer.css'
 
 import { NavLink } from 'react-router-dom'
@@ -26,17 +27,17 @@ const Footer = () => {
         <div className="footerCol">
           <h3>Programs</h3>
           <ul>
-            <li>VLSI Design Verification</li>
-            <li>Internship Program</li>
-            <li>SystemVerilog & UVM</li>
-            <li>Protocol Training</li>
+            <li><HashLink smooth to={"/courses/#co"}>VLSI Design Verification</HashLink></li>
+            <li><HashLink smooth to={"/#internship"}>Internship Program</HashLink></li>
+            <li><HashLink smooth to={"/courses/#cd"}>SystemVerilog & UVM</HashLink></li>
+            <li><HashLink smooth to={"/courses/#cd"}>Protocol Training</HashLink></li>
           </ul>
         </div>
 
         {/* RIGHT – CONTACT */}
         <div className="footerCol">
           <h3>Contact</h3>
-          <p>Email: company@gmail.com</p>
+          <p>Email: info@siliconvista.in</p>
           <p>Phone: +91 63694 98025</p>
           <p>Location: Chennai, India</p>
         </div>

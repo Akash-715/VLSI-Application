@@ -2,7 +2,7 @@ import React from 'react';
 import './about.css';
 
 import Footer from '../Components/Footer.jsx';
-import aboutImg from '../assets/About.webp';
+import aboutImg from '../assets/about.webp';
 import visionImg from '../assets/vision.webp';
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* ABOUT + COMMITMENT SECTION */}
+  
       <div className="aboutContentGrid">
 
         {/* ABOUT CONTENT */}

@@ -16,8 +16,8 @@ const HeroCarousel = () => {
       loop={true}
       effect="fade"
       autoplay={{ delay: 3500 }}
-      pagination={{ clickable: true }}
-      navigation={true}
+      pagination={{ clickable: false}}
+      navigation={false}
       className="hero-swiper"
       >
 
