@@ -9,7 +9,7 @@ import { MdOutlineTrackChanges } from "react-icons/md";
 
 
 import Footer from '../Components/Footer.jsx';
-import aboutImg from '../assets/about.webp';
+import aboutImg from '../assets/abt.webp';
 import visionImg from '../assets/vision.webp';
 
 const About = () => {
