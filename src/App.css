@@ -657,7 +657,7 @@
 
 .swiper-slide1 {
   height: 420px;
-  background: url("./assets/Carousal.webp") no-repeat center;
+  background: url("./assets/MobileCarousal1.webp") no-repeat center;
   background-size: contain !important;
   background-position:center !important;
   background-color:white;    /* fallback color */
